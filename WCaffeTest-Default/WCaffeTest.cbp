@@ -1,0 +1,1602 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="WCaffeTest" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\share\;CMake Files\..\..\..\..\..\..\usr\share\OpenCV\;CMake Files\..\..\..\..\..\..\opt\;CMake Files\..\..\..\..\..\..\opt\caffe\;CMake Files\..\..\..\..\..\..\opt\caffe\bin\;CMake Files\..\..\..\..\..\..\opt\ITK\;CMake Files\..\..\..\..\..\..\opt\ITK\Bin\;CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\;CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\;CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\;CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\;CMake Files\..\..\..\..\..\..\opt\ITK\CMake\;CMake Files\..\..\..\..\..\..\opt\VTK\;CMake Files\..\..\..\..\..\..\opt\VTK\Bin\;CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\;CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\;CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\;CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\;CMake Files\..\..\..\..\..\..\opt\VTK\CMake\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/miloslav/PhD/D-2016/WCaffeTest/WCaffeTest-Default" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/WCaffeTest/WCaffeTest-Default/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/WCaffeTest/WCaffeTest-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/WCaffeTest/WCaffeTest-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/WCaffeTest/WCaffeTest-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/miloslav/PhD/D-2016/WCaffeTest/WCaffeTest-Default" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/WCaffeTest/WCaffeTest-Default/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/WCaffeTest/WCaffeTest-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/WCaffeTest/WCaffeTest-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/WCaffeTest/WCaffeTest-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="trainer">
+         <Option output="/home/miloslav/PhD/D-2016/WCaffeTest/WCaffeTest-Default/trainer" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/miloslav/PhD/D-2016/WCaffeTest/WCaffeTest-Default" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DCPU_ONLY" />
+            <Add option="-DITK_IO_FACTORY_REGISTER_MANAGER" />
+            <Add option="-DvtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2)" />
+            <Add option="-DvtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2)" />
+            <Add option="-DvtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)" />
+            <Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2)" />
+            <Add directory="/home/miloslav/PhD/D-2016/WCaffeTest/WCaffeTest-Default/ITKIOFactoryRegistration" />
+            <Add directory="/opt/ITK/Bin/Modules/Core/Common" />
+            <Add directory="/opt/ITK/Bin/Modules/IO/ImageBase" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/DICOMParser/src/DICOMParser" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/DoubleConversion/src/double-conversion" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/Expat/src/expat" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/GDCM" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/GDCM/src/gdcm/Source/Common" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/HDF5/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/JPEG/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/KWSys/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/MetaIO/src/MetaIO/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/Netlib" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/NrrdIO/src/NrrdIO" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/PNG/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/TIFF/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/TIFF/src/itktiff" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/VNL/src/vxl/core" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/VNL/src/vxl/v3p/netlib" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/VNL/src/vxl/vcl" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/ZLIB/src" />
+            <Add directory="/opt/ITK/Modules/Bridge/VTK/include" />
+            <Add directory="/opt/ITK/Modules/Core/Common/include" />
+            <Add directory="/opt/ITK/Modules/Core/FiniteDifference/include" />
+            <Add directory="/opt/ITK/Modules/Core/GPUCommon/include" />
+            <Add directory="/opt/ITK/Modules/Core/GPUFiniteDifference/include" />
+            <Add directory="/opt/ITK/Modules/Core/ImageAdaptors/include" />
+            <Add directory="/opt/ITK/Modules/Core/ImageFunction/include" />
+            <Add directory="/opt/ITK/Modules/Core/Mesh/include" />
+            <Add directory="/opt/ITK/Modules/Core/QuadEdgeMesh/include" />
+            <Add directory="/opt/ITK/Modules/Core/SpatialObjects/include" />
+            <Add directory="/opt/ITK/Modules/Core/TestKernel/include" />
+            <Add directory="/opt/ITK/Modules/Core/Transform/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/AnisotropicSmoothing/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/AntiAlias/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/BiasCorrection/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/BinaryMathematicalMorphology/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Colormap/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Convolution/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/CurvatureFlow/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Deconvolution/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Denoising/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/DiffusionTensorImage/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/DisplacementField/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/DistanceMap/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/FFT/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/FastMarching/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/GPUAnisotropicSmoothing/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/GPUImageFilterBase/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/GPUSmoothing/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/GPUThresholding/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageCompare/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageCompose/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageFeature/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageFilterBase/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageFusion/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageGradient/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageGrid/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageIntensity/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageLabel/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageNoise/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageSources/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageStatistics/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/LabelMap/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/MathematicalMorphology/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Path/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/QuadEdgeMeshFiltering/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Smoothing/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/SpatialFunction/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Thresholding/include" />
+            <Add directory="/opt/ITK/Modules/IO/BMP/include" />
+            <Add directory="/opt/ITK/Modules/IO/BioRad/include" />
+            <Add directory="/opt/ITK/Modules/IO/CSV/include" />
+            <Add directory="/opt/ITK/Modules/IO/GDCM/include" />
+            <Add directory="/opt/ITK/Modules/IO/GE/include" />
+            <Add directory="/opt/ITK/Modules/IO/GIPL/include" />
+            <Add directory="/opt/ITK/Modules/IO/HDF5/include" />
+            <Add directory="/opt/ITK/Modules/IO/IPL/include" />
+            <Add directory="/opt/ITK/Modules/IO/ImageBase/include" />
+            <Add directory="/opt/ITK/Modules/IO/JPEG/include" />
+            <Add directory="/opt/ITK/Modules/IO/LSM/include" />
+            <Add directory="/opt/ITK/Modules/IO/MRC/include" />
+            <Add directory="/opt/ITK/Modules/IO/Mesh/include" />
+            <Add directory="/opt/ITK/Modules/IO/Meta/include" />
+            <Add directory="/opt/ITK/Modules/IO/NIFTI/include" />
+            <Add directory="/opt/ITK/Modules/IO/NRRD/include" />
+            <Add directory="/opt/ITK/Modules/IO/PNG/include" />
+            <Add directory="/opt/ITK/Modules/IO/RAW/include" />
+            <Add directory="/opt/ITK/Modules/IO/Siemens/include" />
+            <Add directory="/opt/ITK/Modules/IO/SpatialObjects/include" />
+            <Add directory="/opt/ITK/Modules/IO/Stimulate/include" />
+            <Add directory="/opt/ITK/Modules/IO/TIFF/include" />
+            <Add directory="/opt/ITK/Modules/IO/TransformBase/include" />
+            <Add directory="/opt/ITK/Modules/IO/TransformHDF5/include" />
+            <Add directory="/opt/ITK/Modules/IO/TransformInsightLegacy/include" />
+            <Add directory="/opt/ITK/Modules/IO/TransformMatlab/include" />
+            <Add directory="/opt/ITK/Modules/IO/VTK/include" />
+            <Add directory="/opt/ITK/Modules/IO/XML/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Eigen/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/FEM/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/NarrowBand/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/NeuralNetworks/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Optimizers/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Optimizersv4/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Polynomials/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Statistics/include" />
+            <Add directory="/opt/ITK/Modules/Registration/Common/include" />
+            <Add directory="/opt/ITK/Modules/Registration/FEM/include" />
+            <Add directory="/opt/ITK/Modules/Registration/GPUCommon/include" />
+            <Add directory="/opt/ITK/Modules/Registration/GPUPDEDeformable/include" />
+            <Add directory="/opt/ITK/Modules/Registration/Metricsv4/include" />
+            <Add directory="/opt/ITK/Modules/Registration/PDEDeformable/include" />
+            <Add directory="/opt/ITK/Modules/Registration/RegistrationMethodsv4/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/BioCell/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/Classifiers/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/ConnectedComponents/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/DeformableMesh/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/KLMRegionGrowing/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/LabelVoting/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/LevelSets/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/LevelSetsv4/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/MarkovRandomFieldsClassifiers/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/RegionGrowing/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/SignedDistanceFunction/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/Voronoi/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/Watersheds/include" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/DICOMParser/src/DICOMParser" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/DoubleConversion/src/double-conversion" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/Expat/src/expat" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/Common" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/DataDictionary" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/DataStructureAndEncodingDefinition" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/InformationObjectDefinition" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/MediaStorageAndFileFormat" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/MessageExchangeDefinition" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GIFTI/src/gifticlib" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/HDF5/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/JPEG/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/MetaIO/src/MetaIO/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/NIFTI/src/nifti/niftilib" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/NIFTI/src/nifti/znzlib" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/NrrdIO/src/NrrdIO" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/PNG/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/TIFF/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/VNL/src/vxl/core" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/VNL/src/vxl/v3p/netlib" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/VNL/src/vxl/vcl" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/VNLInstantiation/include" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/ZLIB/src" />
+            <Add directory="/opt/ITK/Modules/Video/Core/include" />
+            <Add directory="/opt/ITK/Modules/Video/Filtering/include" />
+            <Add directory="/opt/ITK/Modules/Video/IO/include" />
+            <Add directory="/opt/VTK/Bin/Charts/Core" />
+            <Add directory="/opt/VTK/Bin/Common/Color" />
+            <Add directory="/opt/VTK/Bin/Common/ComputationalGeometry" />
+            <Add directory="/opt/VTK/Bin/Common/Core" />
+            <Add directory="/opt/VTK/Bin/Common/DataModel" />
+            <Add directory="/opt/VTK/Bin/Common/ExecutionModel" />
+            <Add directory="/opt/VTK/Bin/Common/Math" />
+            <Add directory="/opt/VTK/Bin/Common/Misc" />
+            <Add directory="/opt/VTK/Bin/Common/System" />
+            <Add directory="/opt/VTK/Bin/Common/Transforms" />
+            <Add directory="/opt/VTK/Bin/Domains/Chemistry" />
+            <Add directory="/opt/VTK/Bin/Domains/ChemistryOpenGL2" />
+            <Add directory="/opt/VTK/Bin/Filters/AMR" />
+            <Add directory="/opt/VTK/Bin/Filters/Core" />
+            <Add directory="/opt/VTK/Bin/Filters/Extraction" />
+            <Add directory="/opt/VTK/Bin/Filters/FlowPaths" />
+            <Add directory="/opt/VTK/Bin/Filters/General" />
+            <Add directory="/opt/VTK/Bin/Filters/Generic" />
+            <Add directory="/opt/VTK/Bin/Filters/Geometry" />
+            <Add directory="/opt/VTK/Bin/Filters/Hybrid" />
+            <Add directory="/opt/VTK/Bin/Filters/HyperTree" />
+            <Add directory="/opt/VTK/Bin/Filters/Imaging" />
+            <Add directory="/opt/VTK/Bin/Filters/Modeling" />
+            <Add directory="/opt/VTK/Bin/Filters/Parallel" />
+            <Add directory="/opt/VTK/Bin/Filters/ParallelImaging" />
+            <Add directory="/opt/VTK/Bin/Filters/Programmable" />
+            <Add directory="/opt/VTK/Bin/Filters/SMP" />
+            <Add directory="/opt/VTK/Bin/Filters/Selection" />
+            <Add directory="/opt/VTK/Bin/Filters/Sources" />
+            <Add directory="/opt/VTK/Bin/Filters/Statistics" />
+            <Add directory="/opt/VTK/Bin/Filters/Texture" />
+            <Add directory="/opt/VTK/Bin/Filters/Verdict" />
+            <Add directory="/opt/VTK/Bin/Geovis/Core" />
+            <Add directory="/opt/VTK/Bin/IO/AMR" />
+            <Add directory="/opt/VTK/Bin/IO/Core" />
+            <Add directory="/opt/VTK/Bin/IO/EnSight" />
+            <Add directory="/opt/VTK/Bin/IO/Exodus" />
+            <Add directory="/opt/VTK/Bin/IO/Export" />
+            <Add directory="/opt/VTK/Bin/IO/Geometry" />
+            <Add directory="/opt/VTK/Bin/IO/Image" />
+            <Add directory="/opt/VTK/Bin/IO/Import" />
+            <Add directory="/opt/VTK/Bin/IO/Infovis" />
+            <Add directory="/opt/VTK/Bin/IO/LSDyna" />
+            <Add directory="/opt/VTK/Bin/IO/Legacy" />
+            <Add directory="/opt/VTK/Bin/IO/MINC" />
+            <Add directory="/opt/VTK/Bin/IO/Movie" />
+            <Add directory="/opt/VTK/Bin/IO/NetCDF" />
+            <Add directory="/opt/VTK/Bin/IO/PLY" />
+            <Add directory="/opt/VTK/Bin/IO/Parallel" />
+            <Add directory="/opt/VTK/Bin/IO/ParallelXML" />
+            <Add directory="/opt/VTK/Bin/IO/SQL" />
+            <Add directory="/opt/VTK/Bin/IO/Video" />
+            <Add directory="/opt/VTK/Bin/IO/XML" />
+            <Add directory="/opt/VTK/Bin/IO/XMLParser" />
+            <Add directory="/opt/VTK/Bin/Imaging/Color" />
+            <Add directory="/opt/VTK/Bin/Imaging/Core" />
+            <Add directory="/opt/VTK/Bin/Imaging/Fourier" />
+            <Add directory="/opt/VTK/Bin/Imaging/General" />
+            <Add directory="/opt/VTK/Bin/Imaging/Hybrid" />
+            <Add directory="/opt/VTK/Bin/Imaging/Math" />
+            <Add directory="/opt/VTK/Bin/Imaging/Morphological" />
+            <Add directory="/opt/VTK/Bin/Imaging/Sources" />
+            <Add directory="/opt/VTK/Bin/Imaging/Statistics" />
+            <Add directory="/opt/VTK/Bin/Imaging/Stencil" />
+            <Add directory="/opt/VTK/Bin/Infovis/Core" />
+            <Add directory="/opt/VTK/Bin/Infovis/Layout" />
+            <Add directory="/opt/VTK/Bin/Interaction/Image" />
+            <Add directory="/opt/VTK/Bin/Interaction/Style" />
+            <Add directory="/opt/VTK/Bin/Interaction/Widgets" />
+            <Add directory="/opt/VTK/Bin/Parallel/Core" />
+            <Add directory="/opt/VTK/Bin/Rendering/Annotation" />
+            <Add directory="/opt/VTK/Bin/Rendering/Context2D" />
+            <Add directory="/opt/VTK/Bin/Rendering/ContextOpenGL2" />
+            <Add directory="/opt/VTK/Bin/Rendering/Core" />
+            <Add directory="/opt/VTK/Bin/Rendering/FreeType" />
+            <Add directory="/opt/VTK/Bin/Rendering/Image" />
+            <Add directory="/opt/VTK/Bin/Rendering/LOD" />
+            <Add directory="/opt/VTK/Bin/Rendering/Label" />
+            <Add directory="/opt/VTK/Bin/Rendering/OpenGL2" />
+            <Add directory="/opt/VTK/Bin/Rendering/Volume" />
+            <Add directory="/opt/VTK/Bin/Rendering/VolumeOpenGL2" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/alglib" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/exodusII" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/expat" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/freetype" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/glew" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/hdf5" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/hdf5/vtkhdf5" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/jpeg" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/jsoncpp" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/libproj4" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/libproj4/vtklibproj4" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/libxml2" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/libxml2/vtklibxml2" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/netcdf" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/netcdf/vtknetcdf" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/oggtheora" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/png" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/sqlite" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/tiff" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/verdict" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/zlib" />
+            <Add directory="/opt/VTK/Bin/Utilities/DICOMParser" />
+            <Add directory="/opt/VTK/Bin/Utilities/EncodeString" />
+            <Add directory="/opt/VTK/Bin/Utilities/HashSource" />
+            <Add directory="/opt/VTK/Bin/Utilities/KWSys" />
+            <Add directory="/opt/VTK/Bin/Utilities/MetaIO" />
+            <Add directory="/opt/VTK/Bin/Utilities/MetaIO/vtkmetaio" />
+            <Add directory="/opt/VTK/Bin/Views/Context2D" />
+            <Add directory="/opt/VTK/Bin/Views/Core" />
+            <Add directory="/opt/VTK/Bin/Views/Infovis" />
+            <Add directory="/opt/VTK/Charts/Core" />
+            <Add directory="/opt/VTK/Common/Color" />
+            <Add directory="/opt/VTK/Common/ComputationalGeometry" />
+            <Add directory="/opt/VTK/Common/Core" />
+            <Add directory="/opt/VTK/Common/DataModel" />
+            <Add directory="/opt/VTK/Common/ExecutionModel" />
+            <Add directory="/opt/VTK/Common/Math" />
+            <Add directory="/opt/VTK/Common/Misc" />
+            <Add directory="/opt/VTK/Common/System" />
+            <Add directory="/opt/VTK/Common/Transforms" />
+            <Add directory="/opt/VTK/Domains/Chemistry" />
+            <Add directory="/opt/VTK/Domains/ChemistryOpenGL2" />
+            <Add directory="/opt/VTK/Filters/AMR" />
+            <Add directory="/opt/VTK/Filters/Core" />
+            <Add directory="/opt/VTK/Filters/Extraction" />
+            <Add directory="/opt/VTK/Filters/FlowPaths" />
+            <Add directory="/opt/VTK/Filters/General" />
+            <Add directory="/opt/VTK/Filters/Generic" />
+            <Add directory="/opt/VTK/Filters/Geometry" />
+            <Add directory="/opt/VTK/Filters/Hybrid" />
+            <Add directory="/opt/VTK/Filters/HyperTree" />
+            <Add directory="/opt/VTK/Filters/Imaging" />
+            <Add directory="/opt/VTK/Filters/Modeling" />
+            <Add directory="/opt/VTK/Filters/Parallel" />
+            <Add directory="/opt/VTK/Filters/ParallelImaging" />
+            <Add directory="/opt/VTK/Filters/Programmable" />
+            <Add directory="/opt/VTK/Filters/SMP" />
+            <Add directory="/opt/VTK/Filters/Selection" />
+            <Add directory="/opt/VTK/Filters/Sources" />
+            <Add directory="/opt/VTK/Filters/Statistics" />
+            <Add directory="/opt/VTK/Filters/Texture" />
+            <Add directory="/opt/VTK/Filters/Verdict" />
+            <Add directory="/opt/VTK/Geovis/Core" />
+            <Add directory="/opt/VTK/IO/AMR" />
+            <Add directory="/opt/VTK/IO/Core" />
+            <Add directory="/opt/VTK/IO/EnSight" />
+            <Add directory="/opt/VTK/IO/Exodus" />
+            <Add directory="/opt/VTK/IO/Export" />
+            <Add directory="/opt/VTK/IO/Geometry" />
+            <Add directory="/opt/VTK/IO/Image" />
+            <Add directory="/opt/VTK/IO/Import" />
+            <Add directory="/opt/VTK/IO/Infovis" />
+            <Add directory="/opt/VTK/IO/LSDyna" />
+            <Add directory="/opt/VTK/IO/Legacy" />
+            <Add directory="/opt/VTK/IO/MINC" />
+            <Add directory="/opt/VTK/IO/Movie" />
+            <Add directory="/opt/VTK/IO/NetCDF" />
+            <Add directory="/opt/VTK/IO/PLY" />
+            <Add directory="/opt/VTK/IO/Parallel" />
+            <Add directory="/opt/VTK/IO/ParallelXML" />
+            <Add directory="/opt/VTK/IO/SQL" />
+            <Add directory="/opt/VTK/IO/Video" />
+            <Add directory="/opt/VTK/IO/XML" />
+            <Add directory="/opt/VTK/IO/XMLParser" />
+            <Add directory="/opt/VTK/Imaging/Color" />
+            <Add directory="/opt/VTK/Imaging/Core" />
+            <Add directory="/opt/VTK/Imaging/Fourier" />
+            <Add directory="/opt/VTK/Imaging/General" />
+            <Add directory="/opt/VTK/Imaging/Hybrid" />
+            <Add directory="/opt/VTK/Imaging/Math" />
+            <Add directory="/opt/VTK/Imaging/Morphological" />
+            <Add directory="/opt/VTK/Imaging/Sources" />
+            <Add directory="/opt/VTK/Imaging/Statistics" />
+            <Add directory="/opt/VTK/Imaging/Stencil" />
+            <Add directory="/opt/VTK/Infovis/Core" />
+            <Add directory="/opt/VTK/Infovis/Layout" />
+            <Add directory="/opt/VTK/Interaction/Image" />
+            <Add directory="/opt/VTK/Interaction/Style" />
+            <Add directory="/opt/VTK/Interaction/Widgets" />
+            <Add directory="/opt/VTK/Parallel/Core" />
+            <Add directory="/opt/VTK/Rendering/Annotation" />
+            <Add directory="/opt/VTK/Rendering/Context2D" />
+            <Add directory="/opt/VTK/Rendering/ContextOpenGL2" />
+            <Add directory="/opt/VTK/Rendering/Core" />
+            <Add directory="/opt/VTK/Rendering/FreeType" />
+            <Add directory="/opt/VTK/Rendering/Image" />
+            <Add directory="/opt/VTK/Rendering/LOD" />
+            <Add directory="/opt/VTK/Rendering/Label" />
+            <Add directory="/opt/VTK/Rendering/OpenGL2" />
+            <Add directory="/opt/VTK/Rendering/Volume" />
+            <Add directory="/opt/VTK/Rendering/VolumeOpenGL2" />
+            <Add directory="/opt/VTK/ThirdParty/alglib" />
+            <Add directory="/opt/VTK/ThirdParty/exodusII" />
+            <Add directory="/opt/VTK/ThirdParty/expat" />
+            <Add directory="/opt/VTK/ThirdParty/freetype" />
+            <Add directory="/opt/VTK/ThirdParty/glew" />
+            <Add directory="/opt/VTK/ThirdParty/hdf5" />
+            <Add directory="/opt/VTK/ThirdParty/hdf5/vtkhdf5/hl/src" />
+            <Add directory="/opt/VTK/ThirdParty/hdf5/vtkhdf5/src" />
+            <Add directory="/opt/VTK/ThirdParty/jpeg" />
+            <Add directory="/opt/VTK/ThirdParty/jsoncpp" />
+            <Add directory="/opt/VTK/ThirdParty/libproj4" />
+            <Add directory="/opt/VTK/ThirdParty/libproj4/vtklibproj4" />
+            <Add directory="/opt/VTK/ThirdParty/libxml2" />
+            <Add directory="/opt/VTK/ThirdParty/netcdf" />
+            <Add directory="/opt/VTK/ThirdParty/netcdf/vtknetcdf/include" />
+            <Add directory="/opt/VTK/ThirdParty/oggtheora" />
+            <Add directory="/opt/VTK/ThirdParty/png" />
+            <Add directory="/opt/VTK/ThirdParty/sqlite" />
+            <Add directory="/opt/VTK/ThirdParty/tiff" />
+            <Add directory="/opt/VTK/ThirdParty/verdict" />
+            <Add directory="/opt/VTK/ThirdParty/zlib" />
+            <Add directory="/opt/VTK/Utilities/DICOMParser" />
+            <Add directory="/opt/VTK/Utilities/EncodeString" />
+            <Add directory="/opt/VTK/Utilities/HashSource" />
+            <Add directory="/opt/VTK/Utilities/KWSys" />
+            <Add directory="/opt/VTK/Utilities/MetaIO" />
+            <Add directory="/opt/VTK/Views/Context2D" />
+            <Add directory="/opt/VTK/Views/Core" />
+            <Add directory="/opt/VTK/Views/Infovis" />
+            <Add directory="/opt/caffe/bin/include" />
+            <Add directory="/opt/caffe/include" />
+            <Add directory="/opt/caffe/src" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/atlas" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/opencv" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/WCaffeTest/WCaffeTest-Default/Makefile&quot;  VERBOSE=1 trainer" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/WCaffeTest/WCaffeTest-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/WCaffeTest/WCaffeTest-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/WCaffeTest/WCaffeTest-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="trainer/fast">
+         <Option output="/home/miloslav/PhD/D-2016/WCaffeTest/WCaffeTest-Default/trainer" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/miloslav/PhD/D-2016/WCaffeTest/WCaffeTest-Default" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DCPU_ONLY" />
+            <Add option="-DITK_IO_FACTORY_REGISTER_MANAGER" />
+            <Add option="-DvtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2)" />
+            <Add option="-DvtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2)" />
+            <Add option="-DvtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)" />
+            <Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2)" />
+            <Add directory="/home/miloslav/PhD/D-2016/WCaffeTest/WCaffeTest-Default/ITKIOFactoryRegistration" />
+            <Add directory="/opt/ITK/Bin/Modules/Core/Common" />
+            <Add directory="/opt/ITK/Bin/Modules/IO/ImageBase" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/DICOMParser/src/DICOMParser" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/DoubleConversion/src/double-conversion" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/Expat/src/expat" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/GDCM" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/GDCM/src/gdcm/Source/Common" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/HDF5/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/JPEG/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/KWSys/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/MetaIO/src/MetaIO/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/Netlib" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/NrrdIO/src/NrrdIO" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/PNG/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/TIFF/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/TIFF/src/itktiff" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/VNL/src/vxl/core" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/VNL/src/vxl/v3p/netlib" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/VNL/src/vxl/vcl" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/ZLIB/src" />
+            <Add directory="/opt/ITK/Modules/Bridge/VTK/include" />
+            <Add directory="/opt/ITK/Modules/Core/Common/include" />
+            <Add directory="/opt/ITK/Modules/Core/FiniteDifference/include" />
+            <Add directory="/opt/ITK/Modules/Core/GPUCommon/include" />
+            <Add directory="/opt/ITK/Modules/Core/GPUFiniteDifference/include" />
+            <Add directory="/opt/ITK/Modules/Core/ImageAdaptors/include" />
+            <Add directory="/opt/ITK/Modules/Core/ImageFunction/include" />
+            <Add directory="/opt/ITK/Modules/Core/Mesh/include" />
+            <Add directory="/opt/ITK/Modules/Core/QuadEdgeMesh/include" />
+            <Add directory="/opt/ITK/Modules/Core/SpatialObjects/include" />
+            <Add directory="/opt/ITK/Modules/Core/TestKernel/include" />
+            <Add directory="/opt/ITK/Modules/Core/Transform/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/AnisotropicSmoothing/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/AntiAlias/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/BiasCorrection/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/BinaryMathematicalMorphology/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Colormap/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Convolution/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/CurvatureFlow/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Deconvolution/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Denoising/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/DiffusionTensorImage/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/DisplacementField/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/DistanceMap/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/FFT/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/FastMarching/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/GPUAnisotropicSmoothing/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/GPUImageFilterBase/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/GPUSmoothing/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/GPUThresholding/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageCompare/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageCompose/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageFeature/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageFilterBase/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageFusion/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageGradient/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageGrid/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageIntensity/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageLabel/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageNoise/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageSources/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageStatistics/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/LabelMap/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/MathematicalMorphology/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Path/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/QuadEdgeMeshFiltering/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Smoothing/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/SpatialFunction/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Thresholding/include" />
+            <Add directory="/opt/ITK/Modules/IO/BMP/include" />
+            <Add directory="/opt/ITK/Modules/IO/BioRad/include" />
+            <Add directory="/opt/ITK/Modules/IO/CSV/include" />
+            <Add directory="/opt/ITK/Modules/IO/GDCM/include" />
+            <Add directory="/opt/ITK/Modules/IO/GE/include" />
+            <Add directory="/opt/ITK/Modules/IO/GIPL/include" />
+            <Add directory="/opt/ITK/Modules/IO/HDF5/include" />
+            <Add directory="/opt/ITK/Modules/IO/IPL/include" />
+            <Add directory="/opt/ITK/Modules/IO/ImageBase/include" />
+            <Add directory="/opt/ITK/Modules/IO/JPEG/include" />
+            <Add directory="/opt/ITK/Modules/IO/LSM/include" />
+            <Add directory="/opt/ITK/Modules/IO/MRC/include" />
+            <Add directory="/opt/ITK/Modules/IO/Mesh/include" />
+            <Add directory="/opt/ITK/Modules/IO/Meta/include" />
+            <Add directory="/opt/ITK/Modules/IO/NIFTI/include" />
+            <Add directory="/opt/ITK/Modules/IO/NRRD/include" />
+            <Add directory="/opt/ITK/Modules/IO/PNG/include" />
+            <Add directory="/opt/ITK/Modules/IO/RAW/include" />
+            <Add directory="/opt/ITK/Modules/IO/Siemens/include" />
+            <Add directory="/opt/ITK/Modules/IO/SpatialObjects/include" />
+            <Add directory="/opt/ITK/Modules/IO/Stimulate/include" />
+            <Add directory="/opt/ITK/Modules/IO/TIFF/include" />
+            <Add directory="/opt/ITK/Modules/IO/TransformBase/include" />
+            <Add directory="/opt/ITK/Modules/IO/TransformHDF5/include" />
+            <Add directory="/opt/ITK/Modules/IO/TransformInsightLegacy/include" />
+            <Add directory="/opt/ITK/Modules/IO/TransformMatlab/include" />
+            <Add directory="/opt/ITK/Modules/IO/VTK/include" />
+            <Add directory="/opt/ITK/Modules/IO/XML/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Eigen/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/FEM/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/NarrowBand/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/NeuralNetworks/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Optimizers/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Optimizersv4/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Polynomials/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Statistics/include" />
+            <Add directory="/opt/ITK/Modules/Registration/Common/include" />
+            <Add directory="/opt/ITK/Modules/Registration/FEM/include" />
+            <Add directory="/opt/ITK/Modules/Registration/GPUCommon/include" />
+            <Add directory="/opt/ITK/Modules/Registration/GPUPDEDeformable/include" />
+            <Add directory="/opt/ITK/Modules/Registration/Metricsv4/include" />
+            <Add directory="/opt/ITK/Modules/Registration/PDEDeformable/include" />
+            <Add directory="/opt/ITK/Modules/Registration/RegistrationMethodsv4/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/BioCell/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/Classifiers/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/ConnectedComponents/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/DeformableMesh/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/KLMRegionGrowing/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/LabelVoting/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/LevelSets/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/LevelSetsv4/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/MarkovRandomFieldsClassifiers/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/RegionGrowing/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/SignedDistanceFunction/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/Voronoi/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/Watersheds/include" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/DICOMParser/src/DICOMParser" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/DoubleConversion/src/double-conversion" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/Expat/src/expat" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/Common" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/DataDictionary" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/DataStructureAndEncodingDefinition" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/InformationObjectDefinition" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/MediaStorageAndFileFormat" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/MessageExchangeDefinition" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GIFTI/src/gifticlib" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/HDF5/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/JPEG/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/MetaIO/src/MetaIO/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/NIFTI/src/nifti/niftilib" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/NIFTI/src/nifti/znzlib" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/NrrdIO/src/NrrdIO" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/PNG/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/TIFF/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/VNL/src/vxl/core" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/VNL/src/vxl/v3p/netlib" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/VNL/src/vxl/vcl" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/VNLInstantiation/include" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/ZLIB/src" />
+            <Add directory="/opt/ITK/Modules/Video/Core/include" />
+            <Add directory="/opt/ITK/Modules/Video/Filtering/include" />
+            <Add directory="/opt/ITK/Modules/Video/IO/include" />
+            <Add directory="/opt/VTK/Bin/Charts/Core" />
+            <Add directory="/opt/VTK/Bin/Common/Color" />
+            <Add directory="/opt/VTK/Bin/Common/ComputationalGeometry" />
+            <Add directory="/opt/VTK/Bin/Common/Core" />
+            <Add directory="/opt/VTK/Bin/Common/DataModel" />
+            <Add directory="/opt/VTK/Bin/Common/ExecutionModel" />
+            <Add directory="/opt/VTK/Bin/Common/Math" />
+            <Add directory="/opt/VTK/Bin/Common/Misc" />
+            <Add directory="/opt/VTK/Bin/Common/System" />
+            <Add directory="/opt/VTK/Bin/Common/Transforms" />
+            <Add directory="/opt/VTK/Bin/Domains/Chemistry" />
+            <Add directory="/opt/VTK/Bin/Domains/ChemistryOpenGL2" />
+            <Add directory="/opt/VTK/Bin/Filters/AMR" />
+            <Add directory="/opt/VTK/Bin/Filters/Core" />
+            <Add directory="/opt/VTK/Bin/Filters/Extraction" />
+            <Add directory="/opt/VTK/Bin/Filters/FlowPaths" />
+            <Add directory="/opt/VTK/Bin/Filters/General" />
+            <Add directory="/opt/VTK/Bin/Filters/Generic" />
+            <Add directory="/opt/VTK/Bin/Filters/Geometry" />
+            <Add directory="/opt/VTK/Bin/Filters/Hybrid" />
+            <Add directory="/opt/VTK/Bin/Filters/HyperTree" />
+            <Add directory="/opt/VTK/Bin/Filters/Imaging" />
+            <Add directory="/opt/VTK/Bin/Filters/Modeling" />
+            <Add directory="/opt/VTK/Bin/Filters/Parallel" />
+            <Add directory="/opt/VTK/Bin/Filters/ParallelImaging" />
+            <Add directory="/opt/VTK/Bin/Filters/Programmable" />
+            <Add directory="/opt/VTK/Bin/Filters/SMP" />
+            <Add directory="/opt/VTK/Bin/Filters/Selection" />
+            <Add directory="/opt/VTK/Bin/Filters/Sources" />
+            <Add directory="/opt/VTK/Bin/Filters/Statistics" />
+            <Add directory="/opt/VTK/Bin/Filters/Texture" />
+            <Add directory="/opt/VTK/Bin/Filters/Verdict" />
+            <Add directory="/opt/VTK/Bin/Geovis/Core" />
+            <Add directory="/opt/VTK/Bin/IO/AMR" />
+            <Add directory="/opt/VTK/Bin/IO/Core" />
+            <Add directory="/opt/VTK/Bin/IO/EnSight" />
+            <Add directory="/opt/VTK/Bin/IO/Exodus" />
+            <Add directory="/opt/VTK/Bin/IO/Export" />
+            <Add directory="/opt/VTK/Bin/IO/Geometry" />
+            <Add directory="/opt/VTK/Bin/IO/Image" />
+            <Add directory="/opt/VTK/Bin/IO/Import" />
+            <Add directory="/opt/VTK/Bin/IO/Infovis" />
+            <Add directory="/opt/VTK/Bin/IO/LSDyna" />
+            <Add directory="/opt/VTK/Bin/IO/Legacy" />
+            <Add directory="/opt/VTK/Bin/IO/MINC" />
+            <Add directory="/opt/VTK/Bin/IO/Movie" />
+            <Add directory="/opt/VTK/Bin/IO/NetCDF" />
+            <Add directory="/opt/VTK/Bin/IO/PLY" />
+            <Add directory="/opt/VTK/Bin/IO/Parallel" />
+            <Add directory="/opt/VTK/Bin/IO/ParallelXML" />
+            <Add directory="/opt/VTK/Bin/IO/SQL" />
+            <Add directory="/opt/VTK/Bin/IO/Video" />
+            <Add directory="/opt/VTK/Bin/IO/XML" />
+            <Add directory="/opt/VTK/Bin/IO/XMLParser" />
+            <Add directory="/opt/VTK/Bin/Imaging/Color" />
+            <Add directory="/opt/VTK/Bin/Imaging/Core" />
+            <Add directory="/opt/VTK/Bin/Imaging/Fourier" />
+            <Add directory="/opt/VTK/Bin/Imaging/General" />
+            <Add directory="/opt/VTK/Bin/Imaging/Hybrid" />
+            <Add directory="/opt/VTK/Bin/Imaging/Math" />
+            <Add directory="/opt/VTK/Bin/Imaging/Morphological" />
+            <Add directory="/opt/VTK/Bin/Imaging/Sources" />
+            <Add directory="/opt/VTK/Bin/Imaging/Statistics" />
+            <Add directory="/opt/VTK/Bin/Imaging/Stencil" />
+            <Add directory="/opt/VTK/Bin/Infovis/Core" />
+            <Add directory="/opt/VTK/Bin/Infovis/Layout" />
+            <Add directory="/opt/VTK/Bin/Interaction/Image" />
+            <Add directory="/opt/VTK/Bin/Interaction/Style" />
+            <Add directory="/opt/VTK/Bin/Interaction/Widgets" />
+            <Add directory="/opt/VTK/Bin/Parallel/Core" />
+            <Add directory="/opt/VTK/Bin/Rendering/Annotation" />
+            <Add directory="/opt/VTK/Bin/Rendering/Context2D" />
+            <Add directory="/opt/VTK/Bin/Rendering/ContextOpenGL2" />
+            <Add directory="/opt/VTK/Bin/Rendering/Core" />
+            <Add directory="/opt/VTK/Bin/Rendering/FreeType" />
+            <Add directory="/opt/VTK/Bin/Rendering/Image" />
+            <Add directory="/opt/VTK/Bin/Rendering/LOD" />
+            <Add directory="/opt/VTK/Bin/Rendering/Label" />
+            <Add directory="/opt/VTK/Bin/Rendering/OpenGL2" />
+            <Add directory="/opt/VTK/Bin/Rendering/Volume" />
+            <Add directory="/opt/VTK/Bin/Rendering/VolumeOpenGL2" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/alglib" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/exodusII" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/expat" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/freetype" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/glew" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/hdf5" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/hdf5/vtkhdf5" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/jpeg" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/jsoncpp" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/libproj4" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/libproj4/vtklibproj4" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/libxml2" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/libxml2/vtklibxml2" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/netcdf" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/netcdf/vtknetcdf" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/oggtheora" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/png" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/sqlite" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/tiff" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/verdict" />
+            <Add directory="/opt/VTK/Bin/ThirdParty/zlib" />
+            <Add directory="/opt/VTK/Bin/Utilities/DICOMParser" />
+            <Add directory="/opt/VTK/Bin/Utilities/EncodeString" />
+            <Add directory="/opt/VTK/Bin/Utilities/HashSource" />
+            <Add directory="/opt/VTK/Bin/Utilities/KWSys" />
+            <Add directory="/opt/VTK/Bin/Utilities/MetaIO" />
+            <Add directory="/opt/VTK/Bin/Utilities/MetaIO/vtkmetaio" />
+            <Add directory="/opt/VTK/Bin/Views/Context2D" />
+            <Add directory="/opt/VTK/Bin/Views/Core" />
+            <Add directory="/opt/VTK/Bin/Views/Infovis" />
+            <Add directory="/opt/VTK/Charts/Core" />
+            <Add directory="/opt/VTK/Common/Color" />
+            <Add directory="/opt/VTK/Common/ComputationalGeometry" />
+            <Add directory="/opt/VTK/Common/Core" />
+            <Add directory="/opt/VTK/Common/DataModel" />
+            <Add directory="/opt/VTK/Common/ExecutionModel" />
+            <Add directory="/opt/VTK/Common/Math" />
+            <Add directory="/opt/VTK/Common/Misc" />
+            <Add directory="/opt/VTK/Common/System" />
+            <Add directory="/opt/VTK/Common/Transforms" />
+            <Add directory="/opt/VTK/Domains/Chemistry" />
+            <Add directory="/opt/VTK/Domains/ChemistryOpenGL2" />
+            <Add directory="/opt/VTK/Filters/AMR" />
+            <Add directory="/opt/VTK/Filters/Core" />
+            <Add directory="/opt/VTK/Filters/Extraction" />
+            <Add directory="/opt/VTK/Filters/FlowPaths" />
+            <Add directory="/opt/VTK/Filters/General" />
+            <Add directory="/opt/VTK/Filters/Generic" />
+            <Add directory="/opt/VTK/Filters/Geometry" />
+            <Add directory="/opt/VTK/Filters/Hybrid" />
+            <Add directory="/opt/VTK/Filters/HyperTree" />
+            <Add directory="/opt/VTK/Filters/Imaging" />
+            <Add directory="/opt/VTK/Filters/Modeling" />
+            <Add directory="/opt/VTK/Filters/Parallel" />
+            <Add directory="/opt/VTK/Filters/ParallelImaging" />
+            <Add directory="/opt/VTK/Filters/Programmable" />
+            <Add directory="/opt/VTK/Filters/SMP" />
+            <Add directory="/opt/VTK/Filters/Selection" />
+            <Add directory="/opt/VTK/Filters/Sources" />
+            <Add directory="/opt/VTK/Filters/Statistics" />
+            <Add directory="/opt/VTK/Filters/Texture" />
+            <Add directory="/opt/VTK/Filters/Verdict" />
+            <Add directory="/opt/VTK/Geovis/Core" />
+            <Add directory="/opt/VTK/IO/AMR" />
+            <Add directory="/opt/VTK/IO/Core" />
+            <Add directory="/opt/VTK/IO/EnSight" />
+            <Add directory="/opt/VTK/IO/Exodus" />
+            <Add directory="/opt/VTK/IO/Export" />
+            <Add directory="/opt/VTK/IO/Geometry" />
+            <Add directory="/opt/VTK/IO/Image" />
+            <Add directory="/opt/VTK/IO/Import" />
+            <Add directory="/opt/VTK/IO/Infovis" />
+            <Add directory="/opt/VTK/IO/LSDyna" />
+            <Add directory="/opt/VTK/IO/Legacy" />
+            <Add directory="/opt/VTK/IO/MINC" />
+            <Add directory="/opt/VTK/IO/Movie" />
+            <Add directory="/opt/VTK/IO/NetCDF" />
+            <Add directory="/opt/VTK/IO/PLY" />
+            <Add directory="/opt/VTK/IO/Parallel" />
+            <Add directory="/opt/VTK/IO/ParallelXML" />
+            <Add directory="/opt/VTK/IO/SQL" />
+            <Add directory="/opt/VTK/IO/Video" />
+            <Add directory="/opt/VTK/IO/XML" />
+            <Add directory="/opt/VTK/IO/XMLParser" />
+            <Add directory="/opt/VTK/Imaging/Color" />
+            <Add directory="/opt/VTK/Imaging/Core" />
+            <Add directory="/opt/VTK/Imaging/Fourier" />
+            <Add directory="/opt/VTK/Imaging/General" />
+            <Add directory="/opt/VTK/Imaging/Hybrid" />
+            <Add directory="/opt/VTK/Imaging/Math" />
+            <Add directory="/opt/VTK/Imaging/Morphological" />
+            <Add directory="/opt/VTK/Imaging/Sources" />
+            <Add directory="/opt/VTK/Imaging/Statistics" />
+            <Add directory="/opt/VTK/Imaging/Stencil" />
+            <Add directory="/opt/VTK/Infovis/Core" />
+            <Add directory="/opt/VTK/Infovis/Layout" />
+            <Add directory="/opt/VTK/Interaction/Image" />
+            <Add directory="/opt/VTK/Interaction/Style" />
+            <Add directory="/opt/VTK/Interaction/Widgets" />
+            <Add directory="/opt/VTK/Parallel/Core" />
+            <Add directory="/opt/VTK/Rendering/Annotation" />
+            <Add directory="/opt/VTK/Rendering/Context2D" />
+            <Add directory="/opt/VTK/Rendering/ContextOpenGL2" />
+            <Add directory="/opt/VTK/Rendering/Core" />
+            <Add directory="/opt/VTK/Rendering/FreeType" />
+            <Add directory="/opt/VTK/Rendering/Image" />
+            <Add directory="/opt/VTK/Rendering/LOD" />
+            <Add directory="/opt/VTK/Rendering/Label" />
+            <Add directory="/opt/VTK/Rendering/OpenGL2" />
+            <Add directory="/opt/VTK/Rendering/Volume" />
+            <Add directory="/opt/VTK/Rendering/VolumeOpenGL2" />
+            <Add directory="/opt/VTK/ThirdParty/alglib" />
+            <Add directory="/opt/VTK/ThirdParty/exodusII" />
+            <Add directory="/opt/VTK/ThirdParty/expat" />
+            <Add directory="/opt/VTK/ThirdParty/freetype" />
+            <Add directory="/opt/VTK/ThirdParty/glew" />
+            <Add directory="/opt/VTK/ThirdParty/hdf5" />
+            <Add directory="/opt/VTK/ThirdParty/hdf5/vtkhdf5/hl/src" />
+            <Add directory="/opt/VTK/ThirdParty/hdf5/vtkhdf5/src" />
+            <Add directory="/opt/VTK/ThirdParty/jpeg" />
+            <Add directory="/opt/VTK/ThirdParty/jsoncpp" />
+            <Add directory="/opt/VTK/ThirdParty/libproj4" />
+            <Add directory="/opt/VTK/ThirdParty/libproj4/vtklibproj4" />
+            <Add directory="/opt/VTK/ThirdParty/libxml2" />
+            <Add directory="/opt/VTK/ThirdParty/netcdf" />
+            <Add directory="/opt/VTK/ThirdParty/netcdf/vtknetcdf/include" />
+            <Add directory="/opt/VTK/ThirdParty/oggtheora" />
+            <Add directory="/opt/VTK/ThirdParty/png" />
+            <Add directory="/opt/VTK/ThirdParty/sqlite" />
+            <Add directory="/opt/VTK/ThirdParty/tiff" />
+            <Add directory="/opt/VTK/ThirdParty/verdict" />
+            <Add directory="/opt/VTK/ThirdParty/zlib" />
+            <Add directory="/opt/VTK/Utilities/DICOMParser" />
+            <Add directory="/opt/VTK/Utilities/EncodeString" />
+            <Add directory="/opt/VTK/Utilities/HashSource" />
+            <Add directory="/opt/VTK/Utilities/KWSys" />
+            <Add directory="/opt/VTK/Utilities/MetaIO" />
+            <Add directory="/opt/VTK/Views/Context2D" />
+            <Add directory="/opt/VTK/Views/Core" />
+            <Add directory="/opt/VTK/Views/Infovis" />
+            <Add directory="/opt/caffe/bin/include" />
+            <Add directory="/opt/caffe/include" />
+            <Add directory="/opt/caffe/src" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/atlas" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/opencv" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/WCaffeTest/WCaffeTest-Default/Makefile&quot;  VERBOSE=1 trainer/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/WCaffeTest/WCaffeTest-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/WCaffeTest/WCaffeTest-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/WCaffeTest/WCaffeTest-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/trainer.cpp">
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/classify.hpp">
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/database.hpp">
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../usr/share/OpenCV/OpenCVConfig-version.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\share\OpenCV\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../usr/share/OpenCV/OpenCVConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\share\OpenCV\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../usr/share/OpenCV/OpenCVModules.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\share\OpenCV\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../usr/share/OpenCV/OpenCVModules-release.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\share\OpenCV\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/caffe/bin/CaffeTargets.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\caffe\bin\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/ITKConfigVersion.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/ITKConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/ITKTargets.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKDoubleConversion.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKKWSys.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKVNL.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKVNLInstantiation.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKCommon.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKFiniteDifference.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageFilterBase.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKCurvatureFlow.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageAdaptors.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKNetlib.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKStatistics.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKTransform.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageFunction.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageGrid.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKAnisotropicSmoothing.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageCompose.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOImageBase.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKMesh.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKZLIB.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKMetaIO.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKSpatialObjects.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageStatistics.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKPath.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageIntensity.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageLabel.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKThresholding.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKConnectedComponents.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKMathematicalMorphology.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKLabelMap.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKBinaryMathematicalMorphology.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKNarrowBand.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKDistanceMap.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKQuadEdgeMesh.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKFastMarching.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageCompare.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKSmoothing.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageGradient.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageSources.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageFeature.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKOptimizers.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKSignedDistanceFunction.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKLevelSets.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKAntiAlias.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKPolynomials.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKBiasCorrection.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKBioCell.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKClassifiers.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKColormap.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKFFT.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKConvolution.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKDICOMParser.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKDeconvolution.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKDeformableMesh.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKDenoising.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKDiffusionTensorImage.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKDisplacementField.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKEigen.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKExpat.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOXML.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOSpatialObjects.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKRegistrationCommon.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKFEM.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKPDEDeformableRegistration.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKFEMRegistration.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKGDCM.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKNIFTI.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKGIFTI.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKGPUCommon.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKGPUFiniteDifference.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKGPUAnisotropicSmoothing.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKGPUImageFilterBase.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKGPURegistrationCommon.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKGPUPDEDeformableRegistration.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKGPUSmoothing.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKGPUThresholding.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKHDF5.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOBMP.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOBioRad.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOCSV.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOGDCM.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOIPL.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOGE.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOGIPL.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOHDF5.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKJPEG.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOJPEG.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKTIFF.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOTIFF.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOLSM.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOMRC.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOMesh.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOMeta.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIONIFTI.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKNrrdIO.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIONRRD.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKPNG.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOPNG.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIORAW.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOSiemens.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOStimulate.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOTransformBase.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOTransformHDF5.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOTransformInsightLegacy.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOTransformMatlab.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOVTK.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageFusion.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageNoise.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIntegratedTest.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKKLMRegionGrowing.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKLabelVoting.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKLevelSetsv4.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKMarkovRandomFieldsClassifiers.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKOptimizersv4.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKMetricsv4.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKNeuralNetworks.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKQuadEdgeMeshFiltering.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKRegionGrowing.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKRegistrationMethodsv4.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKSpatialFunction.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKTestKernel.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKVTK.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKVideoCore.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKVideoFiltering.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKVideoIO.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKVoronoi.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKWatersheds.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/CMake/ITKModuleAPI.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\CMake\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/CMake/UseITK.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\CMake\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/CMake/itkImageIOFactoryRegisterManager.h.in">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\CMake\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/ITK/CMake/itkTransformIOFactoryRegisterManager.h.in">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ITK\CMake\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/VTKConfigVersion.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/VTKConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/VTKTargets.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkoggtheora.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkImagingFourier.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkImagingCore.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkCommonDataModel.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkCommonMath.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkCommonCore.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtksys.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkCommonMisc.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkCommonSystem.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkCommonTransforms.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkCommonExecutionModel.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkViewsContext2D.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkRenderingContext2D.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkRenderingCore.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkCommonColor.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkFiltersExtraction.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkFiltersCore.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkFiltersGeneral.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkCommonComputationalGeometry.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkFiltersStatistics.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkalglib.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkFiltersGeometry.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkFiltersSources.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkRenderingFreeType.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkfreetype.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkzlib.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkViewsCore.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkInteractionWidgets.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkFiltersHybrid.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkImagingSources.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkFiltersModeling.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkImagingGeneral.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkImagingHybrid.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkIOImage.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkDICOMParser.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkIOCore.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkMetaIO.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkjpeg.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkpng.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtktiff.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkInteractionStyle.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkRenderingAnnotation.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkImagingColor.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkRenderingVolume.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkInfovisCore.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkFiltersVerdict.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkverdict.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkParallelCore.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkIOLegacy.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkUtilitiesHashSource.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkexodusII.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtknetcdf.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkhdf5.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkIOInfovis.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkIOXML.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkIOGeometry.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkIOXMLParser.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkexpat.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtklibxml2.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkIOAMR.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkFiltersAMR.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkImagingStencil.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkFiltersSelection.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkRenderingVolumeOpenGL2.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkRenderingOpenGL2.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkUtilitiesEncodeString.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkglew.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkIOEnSight.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkImagingStatistics.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtklibproj4.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkIOMovie.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkIOVideo.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkImagingMorphological.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkFiltersFlowPaths.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkIONetCDF.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkGeovisCore.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkInfovisLayout.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkFiltersImaging.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkjsoncpp.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkIOParallel.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkFiltersParallel.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkInteractionImage.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkIOExport.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkRenderingLabel.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkViewsInfovis.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkChartsCore.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkDomainsChemistryOpenGL2.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkDomainsChemistry.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkIOSQL.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtksqlite.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkRenderingContextOpenGL2.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkIOPLY.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkFiltersSMP.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkIOLSDyna.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkRenderingLOD.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkIOExodus.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkImagingMath.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkRenderingImage.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkFiltersGeneric.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkFiltersParallelImaging.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkIOImport.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkFiltersTexture.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkIOParallelXML.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkFiltersProgrammable.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkIOMINC.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/Bin/lib/cmake/vtk-7.0/Modules/vtkFiltersHyperTree.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\Bin\lib\cmake\vtk-7.0\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/CMake/vtkModuleAPI.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\CMake\" />
+      </Unit>
+      <Unit filename="/home/miloslav/Desktop/PhD/D-2016/WCaffeTest/../../../../../../opt/VTK/CMake/UseVTK.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\VTK\CMake\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,1 @@
+/home/miloslav/PhD/D-2016/WCaffeTest/WCaffeTest-Default/CMakeFiles/trainer.dir
